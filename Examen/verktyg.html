@@ -36,12 +36,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="index.html">Meny</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
      <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
@@ -65,14 +59,19 @@
         <ul class="navbar-nav">
             <li class="nav-sub-item"><a href="metod.html">Testmetoder</a></li>   
                   <li class="nav-sub-item"><a href="krav.html">Krav</a></li>    
-                     <li class="nav-sub-item"><a href="princip.html">Test principer</a></li>    
+                     <li class="nav-sub-item"><a href="princip.html">Best practice</a></li>    
                          <li class="nav-sub-item"><a href="verktyg.html">Verktyg</a></li> 
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="about.html">About</a>
+        <ul class="navbar-nav">
+            <li class= "nav-sub-item"><a href="contact.html">Contact</a></li>
+          </ul>
+
       </li>   
-    </ul>
+        </ul>
+
   </div>  
   <div class="search-box">
     <form action="action=”http://search.google.com/find.html” method=”get” accept-charset=”utf-8” onsubmit=”ffresults.show(0);">
@@ -163,44 +162,194 @@
 
 <section>
   <article1>
-  <ol>
-    <h6>Det finns ett Hav av olika framworks att jobba med, Frågan är vad vill företaget.
+
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pics/toptool.jpg" class="image" alt="Mission">
+    </div>
+    <div class="flip-card-back">
+      <p>
+      Det finns ett Hav av olika verktyg att jobba med, Frågan är vad vill företaget.
     Här gäller det att var mycket tydlig från företagets sida innan man börjar investera i olika verktyg. 
-    Jag har använt mig av följande verktyg så lite uppsättning av miljön som möjligt samt att de alla är opensource</h6><br>
-<img class="TextWrap" src="pics/jiralogo.png" height="100" width="100" alt="jira">
-    <li>Jira: Atlassians succé började med verktyget JIRA, som senare blev JIRA Software, JIRA Service Desk och Jira Core. JIRA Software är det världsledande mjukvaruutvecklingsverktyget som används av hela teamet. Verktyget används av över 35 000 företag. JIRA Software är ett team collaboration-verktyg för team som utvecklar mjukvara, 
-       och även för de som teamet kommunicerar med: Andra utvecklare, produktägare, QA…</li><br>
-<img class="TextWrap1" src="pics/teamslogo.png" height="100" width="100" alt="Teams">
-    <li> Microsoft Teams är en molnbaserad plattform utvecklad med samarbete och effektivitet i fokus. Dess tjänster förenklar vårt dagliga arbete och tar teamwork till en ny nivå, oberoende av plats. Videomöten utan strul, tillgång till dina dokument vart du än är, lägre telefonikostnader och projektplanering med uppdateringar i realtid. 
-      Här finns alla verktyg som möjliggör för ett mer fokuserat och flexibelt arbete, oavsett storlek på företag.</li><br>
-<img class="TextWrap" src="pics/excelogo.jpg" height="100" width="100" alt="excel">
-    <li> Microsoft Excel är ett program för kalkyl- och enklare datahanteringsuppgifter som ingår i programsviten Microsoft Office från Microsoft Corporation. 
-      Microsoft lanserade först kalkylprogrammet Multiplan 1982.</li><br>
+    Jag har använt mig av följande verktyg så lite uppsättning av miljön som möjligt samt att de alla är opensource
+      
+      </p>
 
-<img class="TextWrap1" src="pics/vslogo.jpg" height="100" width="100" alt="Vs">
-    <li>Microsoft Visual Studio är en avancerad programutvecklingsmiljö från Microsoft som används till att utveckla PC-baserade applikationer för Microsoft Windows och Internetanpassade distribuerade applikationer.
-     Jag har använt denna kontinuerligt när jag skrivit min kod i Javascript.</li><br>
-<img class="TextWrap" src="pics/Cypresslogo.png" height="100" width="100" alt="cypress">
-    <li> Cypress är ett testverktyg som förbättrar din testupplevelse avsevärt. Det erbjuder funktioner som:
+        </div>
+    </div>
+</div>
+    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pics/jiralogo.png" class="image" alt="Jira">
+    </div>
+    <div class="flip-card-back">
+      <p>  <small>
+      Jira:<br> JIRA är organiserat i separata ytor, Projekt. I varje projekt ligger Ärenden inlagda. 
+      Ett projekt är alltid kopplat till projektdeltagare som kan se och redigera de ärenden som ligger där.
+      Ärenden är i sin tur organiserade i en hierarkisk struktur: Projekt → Epics → Ärenden → Underärenden
+      Varje ärende innehåller en beskrivning, ansvarig handläggare, kommentarer, länkade Wiki-sidor mm.
+      Personliga ärenden<br>
+      Vill man jobba mer uppstyrt kan man också använda Scrum, då tillkommer tidsuppskattning, sprintplanering etc<br>
+      I ett projekt kan man alltid visa eller söka upp ärenden i en lista eller genom sökfunktionen. 
+      För det dagliga arbetet är projektets ärenden organiserade i en eller flera Tavlor där man visuellt kan tilldela, 
+      organisera, prioritera och dokumentera ärenden sinsemellan. 
+      Kanban är den vanligaste metoden för att organisera ärenden,
+      vi använder en enkel modell där ärendestatus följs enligt: Backlog → Aktuellt → Pågående → Klar
 
-Tidsresa, det tar ögonblicksbilder av dina tester när du kör testerna. Detta gör att du enkelt kan hålla muspekaren över varje kommando som ägde rum i ditt test
-Debuggability, Våra läsbara fel och stackspår gör felsökningen blixt snabbt
-Omladdningar i realtid, Cypress laddas automatiskt om när du gör ändringar i dina tester. De här kommandona körs i realtid i din app.
-Automatisk väntan, lägg aldrig till Väntetider eller sömn i dina tester. Cypress väntar automatiskt på kommandon och påståenden innan du går vidare - Inget mer asynk helvete.
-Spioner, stubbar och klockor, verifierar och kontrollerar beteenden hos funktioner, serversvar eller timers. Samma funktionalitet som du gillar från enhetstester är precis vid dina fingertoppar.
-Konsekventa resultat, vår arkitektur använder inte Selen eller WebDriver. Säg hej till snabba, konsekventa och tillförlitliga tester som är flingfria.
-Nätverkstrafikkontroll, enkelt kontrollera, stubba och testa edge-fall utan att din server är involverad. Du kan stoppa nätverkstrafik hur du vill.
-Skärmdumpar och videor, Visa skärmdumpar som tagits automatiskt vid misslyckande, eller videor från hela testpaketet när du kör huvudlöst.</li><br>
-<img class="TextWrap1" src="pics/logo-jenkins.jpg" height="100" width="100" alt="jenkins">
 
-<li>Continuous Integration and Continuous Delivery
-As an extensible automation server, Jenkins can be used as a simple CI server or turned into the continuous delivery hub for any project.
-</li>
+    </small>  </p>
 
-</ol>
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pics/teams.png" class="image" alt="teams">
+    </div>
+    <div class="flip-card-back">
+      <p><small>
+      Jag hade inte behövt lägga upp detta verktyg då det är en självklarhet med Microsoft teams, har vart ett suveränt verktyg
+      under Corona tiden. Denna har riktigt många verktyg, idag kan man nog inte jobba utan denna verktyg.
+      - Chatta: Dela med dig av dina åsikter, och av din personlighet. Skicka GIF-bilder, dekaler och emojier i en gruppchatt eller i privata meddelanden.<br>
+      - Möts: Gå direkt från gruppchatt till videokonferens med en knapptryckning. Grupper om 2 till 10 000 kan mötas på samma plats, oavsett hur utspridda de är geografiskt.<br>
+      - Ring: och ta emot samtal med interna och externa grupper med hjälp av Microsoft Teams-samtal, Telefonsystem, Samtalsabonnemang1 eller Direktroutning.<br>
+      - Samarbeta: Hitta, dela och redigera enkelt filer i realtid med välbekanta appar som Word, PowerPoint och Excel i Teams.
+        - Det här är bara en del, denna varktyg används nog i otroligt stor skala, inte bara arbets platser men även skolor.
+</small>
+</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pics/excellogo.jpg" class="image" alt="excel">
+    </div>
+    <div class="flip-card-back">
+      <p><small>
+      Microsoft Excel är ett program för kalkyl- och enklare datahanteringsuppgifter som ingår i programsviten Microsoft Office från Microsoft Corporation. 
+      Microsoft lanserade först kalkylprogrammet Multiplan 1982.
+      </small>
+</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pics/word.png" class="image" alt="excel">
+    </div>
+    <div class="flip-card-back">
+      <p><small>
+Jag använde både excel och word för dokumentation av test rapporter, samt buggar. Detta är också ett fantastisk verktg.<br>
+- Omvandla dokument till webbsidor: Behöver du publicera ett nyhetsbrev eller dokument så att andra kan läsa det? Omvandla enkelt ett Word-dokument till en webbsida.<br>
+- Få översättning i realtid med bara ett klick: Samarbeta med personer från hela världen. Översätt dokument på andra språk med bara ett klick.<br>
+- Lyft ditt skrivande från bra till fantastiskt: Microsoft Editor kontrollerar mer än bara stavning och grammatik, så att du kan skriva med tillförsikt. Få intelligenta förslag via fönstret Översikt över Editor i Word, och låt Editor hjälpa dig med dokument, e-post och på webben.
+      </small>
+</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pics/vs.jpg" class="image" alt="Visualstudiocode">
+    </div>
+    <div class="flip-card-back">
+      <p>
+      Microsoft Visual Studio <br>är en avancerad programutvecklingsmiljö från Microsoft som används till att utveckla PC-baserade applikationer för Microsoft Windows och Internetanpassade distribuerade applikationer.
+        Jag har använt denna kontinuerligt när jag skrivit min kod i Javascript.
+</p>
+
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pics/Cypresslogo.png" class="image" alt="Cypress">
+    </div>
+    <div class="flip-card-back">
+      <p><small>
+
+      Cypress är BÄST. Jag kan inte förstå att man sitter fortfarande i Selenium!!:<br>
+
+        - Tidsresa, det tar ögonblicksbilder av dina tester när du kör testerna. Detta gör att du enkelt kan hålla muspekaren över varje kommando som ägde rum i ditt test
+        - Debuggability, Våra läsbara fel och stackspår gör felsökningen blixt snabbt.<br>
+        - Omladdningar i realtid, Cypress laddas automatiskt om när du gör ändringar i dina tester. De här kommandona körs i realtid i din app.<br>
+        - Automatisk väntan, Cypress väntar automatiskt på kommandon och påståenden innan du går vidare.<br>
+        - Spioner, stubbar och klockor, verifierar och kontrollerar beteenden hos funktioner, serversvar eller timers.<br>
+        - Konsekventa resultat, vår arkitektur använder inte Selenium eller WebDriver. Säg hej till snabba, konsekventa och tillförlitliga tester som är flingfria.<br>
+        - Nätverkstrafikkontroll, enkelt kontrollera, stubba och testa edge-fall utan att din server är involverad. Du kan stoppa nätverkstrafik hur du vill.<br>
+        - Skärmdumpar och videor, Visa skärmdumpar som tagits automatiskt vid misslyckande, eller videor från hela testpaketet när du kör huvudlöst.<br>
+</small>
+</p>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pics/logo-jenkins.jpg" class="image" alt="jenkins">
+    </div>
+    <div class="flip-card-back">
+      <p><small>
+      Jag har kontiuerligt jobbat med jenkins för Stadium, satt upp många auto tester och låtit dem gå i flera, flera dagar, var 15e minut.
+      EX: end 2 end tester, där jag söker up varan till jag betalar varan i kassan. Super bra verkktyg.
+      - Kontinuerlig integration och kontinuerlig leverans:
+        Jenkins kan användas som en enkel CI-server eller förvandlas till ett kontinuerligt leveranshub för alla projekt.<br>
+
+      - Enkel installation:
+        Jenkins är ett fristående Java-baserat program, redo att köras direkt, med paket för Windows, Mac OS X och andra Unix-liknande operativsystem.<br>
+
+      - Enkel konfiguration:
+        Jenkins kan enkelt ställas in och konfigureras via webbgränssnittet, som inkluderar on-the-fly felkontroller och inbyggd hjälp.<br>
+
+      - Plugins:
+        Med hundratals plugins i Update Center integrerar Jenkins med praktiskt taget alla verktyg i den kontinuerliga integrations- och kontinuerliga leveransverktygskedjan.
+
+      - Utdragbar
+        Jenkins kan utökas via dess plugin-arkitektur, vilket ger nästan oändliga möjligheter för vad Jenkins kan göra.
+
+      - Distribuerad
+        Jenkins kan enkelt distribuera arbete över flera maskiner, vilket hjälper snabbare att bygga, testa och distribuera över flera plattformar.
+</small></p>
+
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="pics/toptool.jpg" class="image" alt="Mission">
+    </div>
+    <div class="flip-card-back">
+      <p>
+</p>
+
+        </div>
+    </div>
+</div>
+<!--
   </article1>
 </section>
-
+-->
 <footer>
  
    <div class="foot" ml-auto>
