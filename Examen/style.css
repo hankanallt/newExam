@@ -319,8 +319,8 @@ Clear floats after the columns
 .col-xs-2{
     margin: 5px;
 }
-.col-sm-4{
-    align-content: center;
+.col-sm-12{
+    color: #000;
 }
 /* Style the footer */
 footer {
